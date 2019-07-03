@@ -3,10 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.page.html',
-  styleUrls: ['./inicio.page.scss'],
+  styleUrls: ['./inicio.page.scss']
 })
 export class InicioPage implements OnInit {
-
   componentes: Componente[] = [
     {
       icon: 'american-football',
@@ -28,12 +27,30 @@ export class InicioPage implements OnInit {
       name: 'Buttons y router',
       redirecTo: '/botones'
     },
+    {
+      icon: 'card',
+      name: 'Cards',
+      redirecTo: '/cards'
+    },
+    {
+      icon: 'checkmark-circle-outline',
+      name: 'Checkbox',
+      redirecTo: '/check'
+    },
+    {
+      icon: 'calendar',
+      name: 'DateTime',
+      redirecTo: '/date-time'
+    },
+    {
+      icon: 'car',
+      name: 'Fabs',
+      redirecTo: '/fab'
+    }
   ];
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
 
 interface Componente {
